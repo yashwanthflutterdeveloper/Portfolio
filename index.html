@@ -68,17 +68,31 @@
 
   </div>
 </section>
-
 <section id="contact" class="reveal">
   <h2>Contact</h2>
 
-  <p class="contact-text">📞 <a href="tel:+919381949058">+91 9381949058</a></p>
-  <p class="contact-text">📧 <a href="mailto:yashwanthcherukumalli666@gmail.com">Email Me</a></p>
+  <div class="contact-card">
 
-  <a class="mail-btn" href="mailto:yashwanthcherukumalli666@gmail.com">Mail</a>
-  <a id="whatsappBtn" class="whatsapp-btn">WhatsApp</a>
+    <p class="contact-text">
+      📞 <a href="tel:+919381949058">+91 9381949058</a>
+    </p>
+
+    <p class="contact-text">
+      📧 <a href="mailto:yashwanthcherukumalli666@gmail.com">
+        yashwanthcherukumalli666@gmail.com
+      </a>
+    </p>
+
+    <a class="mail-btn" href="mailto:yashwanthcherukumalli666@gmail.com">
+      ✉ Mail Me
+    </a>
+
+    <a id="whatsappBtn" class="whatsapp-btn">
+      💬 WhatsApp
+    </a>
+
+  </div>
 </section>
-
 <script src="script.js"></script>
 </body>
 </html><style>body {
@@ -289,9 +303,74 @@ section {
   transform: translateY(-5px);
 }
 
-/* Contact */
+/* 🔥 Contact Section Container */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🔥 Contact Card */
+.contact-card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  margin-top: 20px;
+  text-align: center;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+/* Hover effect */
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,255,150,0.2);
+}
+
+/* 🔥 Contact Text */
 .contact-text {
-  color: #ccc;
+  color: #ffffff; /* white text */
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* Links */
+.contact-text a {
+  color: #00e676;
+  text-decoration: none;
+}
+
+.contact-text a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.mail-btn, .whatsapp-btn {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.mail-btn {
+  background: #2962ff;
+}
+
+.mail-btn:hover {
+  background: #0039cb;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
 }
 
 .mail-btn, .whatsapp-btn {
